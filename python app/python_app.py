@@ -1,6 +1,6 @@
 import time
 import random
-# dont know if this is needed or not but better safe than sorry
+# dont know if math is needed or not but better safe than sorry
 import math
 start = 1
 while start == 1:
@@ -63,7 +63,7 @@ elif choice == ("2"):
     print("")
     print("and trees were wiped out by human so the robot could only wonder what we were truely like");time.sleep(2.5)
     print("")
-    #option 3 has been the most chalenging in the sense that i havint looked anything up its my brain only but this has taken the longest
+    # option 3 has been the most chalenging in the sense that i havint looked anything up its my brain only but this has taken the longest
 elif choice == ("3"):
     num = 0
     object1 = "you shouldit see this"
@@ -78,6 +78,7 @@ elif choice == ("3"):
             num += 2
         else:
             num += 2
+        # this section below is to assign a number to a word so it can tell you what the answer is  
         if num == 1:
             object1 = "heads"
         elif num == 2:
