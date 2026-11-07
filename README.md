@@ -1,3 +1,4 @@
+# no ai was used
 # python bot
 (hello this is my first actual project if you look on my profile you will see early builds of this however this is the first one completed and probably more options will be added and little more personalty will be added as well)
 This is a super simple python program to show off some stuff you can do in python :D
