@@ -4,7 +4,6 @@ import random
 import math
 import sys
 # sys is added so i can add an exit for this aplication without using windows X button
-
 start = 1
 while start == 1:
     name = input("hello welcome to my test application please state your name =p ")
@@ -48,7 +47,7 @@ while option == 1:
 n3 = 0 
 answer = 0
 int(answer)
-    # omg this took so long ): and i had to google how to do it but NO AI was used :D i hate AI
+    # omg this took so long ): for something so simple
 if choice == ("1"):
     n1 = int(input("select the first number "))
     print("")
@@ -75,25 +74,39 @@ elif choice == ("3"):
     num = 0
     object1 = "you shouldit see this"
     str(object1)
+    object2 = "you shouldint see this ether"
+    str(object2)
+    correct_ans = "why can you see this??"
+    str(correct_ans)
     while num == 0:
         rn = random.randint(1,2)
-        #print(rn)       <--- un # it if want to verify that it works all it does is print 
+        # if you want to verify that it works all it does is print so just un hashtag the print(rn)
+        #print(rn)      
         grn = input("guess the side head or tales ")
-        if grn == ("head"):
+        if grn == ("heads"):
+            num += 1
+        elif grn == ("head"):
             num += 1
         elif grn == ("tales"):
             num += 2
         else:
             num += 2
         # this section below is to assign a number to a word so it can tell you what the answer is  
+        # had to re write in order to make it tell you the correct answer also rembered "and" existed so that helped alot lol
         if num == 1:
-            object1 = "heads"
+            print("you selected heads")
         elif num == 2:
-            object1 = "tales"
-        if num == rn:
-            print(" you got it correct it was ", object1)
-        elif num != grn:
-            print("you got it wrong it was ", object1)
+            print("you selected tales")
+        if num == 1 and rn == 1:
+            print("you got it correct it was heads")
+        elif num == 2 and rn == 2:
+            print("you got it correct it was tales")
+        elif num == 1 and rn == 2:
+            print("it was actually tales not heads")
+        elif num == 2 and rn == 1:
+            print("it was heads not tales")
+        else:
+            print("there has been an error")
         # This is the list part
         # if user wants it vertical then i should do print while if i want it hoirzontal then i should do the list command
         # so the solution ive came up with is that we will ask the user if they want it vertical or horizontal and that will determuine
@@ -115,6 +128,7 @@ elif choice == ("4"):
     l5 = input("what is your fith item ")
     print("")
     print("now to create your list :D ")
+    # l_val is just so the while loop end correctly and l_ori is the orientation on the list and l# is just the number of the list 
     while l_val == 0:
         if l_ori == ("1"):
             print(l_name," -made by ", name)
